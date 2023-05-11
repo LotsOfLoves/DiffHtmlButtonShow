@@ -1,0 +1,305 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Button</title>
+  </head>
+  <body>
+    <fieldset>
+      <style>
+      .subscribe-button{
+        background-color: rgb(200,0,0);
+        color:white;
+        border:none;
+        font-size:15 px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius:2px;
+        cursor:pointer;
+        margin-right: 8px;
+        transition: opacity 3s;
+
+      }
+      .subscribe-button:hover {
+        opacity:0.65;
+        background-color: green;
+      }
+      .subscribe-button:active{
+        background: yellow;
+        color:black;
+        padding-left: 10px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        font-size: 15px;
+
+      }
+      .join-button{
+        background-color: white;
+        border-color: rgb(64, 64, 161);
+        color:rgb(0, 0, 255);
+        border-width:1px;
+        border-radius: 2px;
+        border-style:solid;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        cursor:pointer;
+        transition: background-color 0.15s,color 0.15s;
+      }
+      .join-button:hover{
+        background-color: black;
+        opacity: 0.8;
+        color: yellow;
+      }
+      .join-button:active{
+        background-color: red;
+        opacity: 0.8;
+        color: white;
+      }
+      .tweet-button{
+        background-color: rgb(2, 158, 255);
+        color:white;
+        border-radius: 18px;
+        border:none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight:bold;
+        font-size:15px;
+        cursor:pointer;
+        margin-left: 8px;
+        transition: box-shadow 0.15s;
+      }
+      .tweet-button:hover{
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.15);
+      }
+      .tweet-button:active{
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.9);
+        transition:box-shadow 0.15s;
+        background:white;
+        color:rgb(2, 158, 255);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 30px;
+      }
+
+      .requestNow-button{
+        background-color: black;
+        color:white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border:none;
+        cursor:pointer;
+        margin-right: 8px;
+      }
+      .requestNow-button:hover{
+        background:rgb(44, 30, 30);
+        transition: background-color 0.15s;
+      }
+      .amazon-button{
+        background-color: rgb(255, 216, 20);
+        color:black;
+        border-radius: 20px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 8px;
+      }
+      .amazon-button:hover{
+        background-color:rgb(158, 133, 3);
+        transition: background-color 0.15s;
+      }
+      .GitHub{
+        background-color: rgba(46, 164, 79);
+        color: white;
+        border-radius: 6px;
+        border:none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .GitHub:hover{
+        background-color:rgb(4, 83, 26);
+        transition:background-color 0.15s;
+      }
+      .bootstrap-get{
+        background-color:  rgba(121, 82, 179);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-style: solid;
+        font-weight: bold;
+        font-size: 15px; 
+        cursor: pointer;
+        margin-right: 6px;
+      }
+      .bootstrap-get:hover{
+        background-color:rgb(51, 19, 101);
+        transition:background-color 0.15s;
+      }
+      .bootstrap-download{
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: rgb(108, 117, 125);
+        border-width: 1px;
+        border-radius: 4px;
+        border-style:solid;
+        border-color: rgb(108,117,125);
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .bootstrap-download:hover{
+        background-color: blanchedalmond;
+        transition:background-color 0.15s;
+      }
+      .LinkedIn{
+        background-color: rgb(87, 87, 169);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight:bold;
+        font-size:14px;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+      .LinkedIn:hover{
+        background-color:rgb(30, 30, 85);
+        transition: background-color 0.15s;
+      }
+      .LinkedIn-save{
+        background-color:hsl(0, 37%, 97%);
+        color: rgb(97, 97, 219);
+        font-weight:bold;
+        font-size:15px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-color: rgb(97, 97, 219);
+        border-style: solid; 
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+      }
+      .LinkedIn-save:hover{
+        background-color: rgb(214, 239, 244);
+        transition: background-color 0.15s;
+      }
+      .link{
+        color:blue;
+        font-style: normal;
+        font-weight: bold;
+      }
+      .price{
+        color:lightseagreen;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .delivery{
+        color: black;
+        font-weight:bold;
+      }
+      .add{
+        background-color: rgb(251, 251, 121);
+        color:black;
+        border-radius: 20px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor:pointer;
+      }
+      .add:hover{
+        background-color:rgb(244, 244, 187);
+        opacity:0.8;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+        transition: background-color 0.15s,color 0.15s;
+
+      }
+      .add:active{
+        background-color: black;
+        color:white;
+        tarnsition: background-color 0.15s, color 0.15s;
+      }
+      .buy{
+        background-color: rgb(243, 206, 113);
+        border: none;
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 8px;
+        cursor:pointer;
+      }
+      .buy:hover{
+        background-color:azure;
+        color:red;
+        transition:background-color 0.15s,color 0.15s;
+      }
+      .buy:active{
+        background-color:black;
+        color:white;
+        transition: background-color 0.15s,color 0.15s;
+      }
+      .wel{
+        background-color: green;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      </style>
+    <button class ="subscribe-button">SUBCRIBE</button>
+    <button class ="join-button">JOIN</button>
+    <button class ="tweet-button">Tweet</button> <br> <br>
+    <button class ="requestNow-button">Request now</button>
+    <button class ="Amazon-button">Add to Card</button>
+    <button class ="GitHub">Sign up</button><br><br>
+    <button class ="bootstrap-get">Get started</button>
+    <button class ="bootstrap-download">Download</button><br><br>
+    <button class ="LinkedIn">Apply on company website</button>
+    <button class ="LinkedIn-save">Save</button>
+    <br><br><br>
+
+    <fieldset>
+      <h1 class ="wel">Welcome to amazon !</h1>
+      <a class ="link" href ="https://www.amazon.in/?ie=UTF8&ext_vrnc=hi&tag=googmantxtmob50-21&ascsubtag=_k_Cj0KCQjwidSWBhDdARIsAIoTVb1_Igzf8KkZcoaFSFJyUWgeMj-LXkBclKXTdHO2aJaMLtT2R9gdWp4aApewEALw_wcB_k_&gclid=Cj0KCQjwidSWBhDdARIsAIoTVb1_Igzf8KkZcoaFSFJyUWgeMj-LXkBclKXTdHO2aJaMLtT2R9gdWp4aApewEALw_wcB" target="_blank">Back to Amazon</a><br><br>
+      <h2>Nike Black Running Shoes</h2><br>
+      <p class ="price">$39 - in stock.</p>
+      <p class ="delivery">Free Delivery Tomorrow.</p><br><br>
+      <button class = "add">Add to Cart</button>
+      <button class ="buy">Buy Now</button>
+    </fieldset>
+  </fieldset>
+</body>
+</html>
